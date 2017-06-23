@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+
+<LinearLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.laptop.scorekeeper.MainActivity">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detoit lions"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:textColor="#212121"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#9E9E9E"
+        android:id="@+id/detoit_text_view"
+        android:textSize="40sp"
+        android:paddingBottom="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/foula_text_view"
+        android:textSize="40sp"
+        android:textColor="#9E9E9E"
+        android:paddingBottom="16dp"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="+3 points"
+        android:width="40dp"
+        android:onClick="Point_A_3"
+        android:padding="16dp"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="+2 points"
+        android:onClick="Point_A_2"
+        android:padding="16dp"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:text="+1 points"
+        android:onClick="Point_A_1"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:text="FOUL"
+        android:onClick="Point_A_foul"
+
+        />
+</LinearLayout>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="400dp"
+        android:background="#9E9E9E"
+        ></View>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicago bears"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="#212121"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/bear_text_view"
+            android:textSize="40sp"
+            android:textColor="#9E9E9E"
+            android:paddingBottom="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/foulb_text_view"
+            android:textSize="40sp"
+            android:textColor="#9E9E9E"
+            android:paddingBottom="16dp"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="+3 points"
+            android:padding="16dp"
+            android:onClick="Point_B_3"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="+2 points"
+            android:onClick="Point_B_2"
+            android:padding="16dp"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="+1 points"
+            android:padding="16dp"
+            android:onClick="Point_B_1"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:padding="16dp"
+            android:layout_height="wrap_content"
+            android:text="FOUL"
+            android:onClick="Point_B_foul"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="reset"
+        android:onClick="reset"
+
+        />
+</RelativeLayout>
